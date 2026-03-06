@@ -12,6 +12,7 @@ SELECT = Read the content of the table
 "*" = All columns
 
 WHERE = Fetch data with conditions (Para buscar dados com condições)
+
 OR = Operator (How "If, For, +, -, Not " in other languages)
 
 

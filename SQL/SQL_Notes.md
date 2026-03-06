@@ -1,7 +1,6 @@
-# Anotações sobre SQL
-# SQL Notes
+# Anotações sobre SQL (SQL Notes)
 
-## Comandos
-## Commands
+
+## Comandos (Commands)
 
 ### INSERT INTO =  

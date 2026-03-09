@@ -31,11 +31,16 @@ WHERE = Entering which have certain conditions that will be changed
 ### WHERE nome = "João"
 DELETE = It deletes the data and it never comes back
 
+### DROP TABLE nameTable
+That command delete the table
 
+### ALTER TABLE users RENAME login
+A command to change table informations
 
+RENAME = It's change the name of table
 
-
-
+### MODIFY COLUNM
+That command change a information colunm in specific
 
 ## Operators
 
@@ -53,3 +58,12 @@ Same operator as other programming languages
 
 ### OR
 Same operator as other programming languages
+
+# Keys
+
+## Primary Key
+
+
+## Foreign Key
+
+

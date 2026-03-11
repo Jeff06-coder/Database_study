@@ -2,6 +2,16 @@
 
 ## Commands
 
+### CREATE TABLE TableName ( id INT, name VARCHAR (255) NOT NULL COMENT "Name user", email VARCHAR (200) NOT UNIQUE "Email user", addres VARCHAR (100) NOT NULL COMENT "ADDRES user")
+
+
+
+
+### Value Restrictions
+NOT NULL = Makes the data mandatory to fill in (Faz o dado ser obrigatório o preenchimento)
+UNIQUE = Makes the data unique, there cannot be two (Faz os dados serem unicos, não pode existir dois)
+DEFAULT = It automatically places status on created data (Ele coloca status nos dados criados de forma automatica)
+
 ### INSERT INTO nameTable (columnsName, columns2) VALUES ("Name", 1)
 Used to insert data into a table (Usado para colocar dados em uma tabela)
 

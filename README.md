@@ -9,5 +9,5 @@ The Database serves to store "memories" and information, to facilitate searches 
 
 (O Banco de Dados serve para armazenar "memórias" e informações, para facilitar pesquisas sobre esses dados necessários. A utilização dele é muito vasta, podendo ajudar de várias maneiras, ajudando em muitos setores. Sua manipulação é feita a partir de códigos, onde a "plataforma" recebe esses códigos e reconhece como comandos a serem execultados, assim é feito sua utilização.)
 
-
+A Database have keys for interact with more Database, and to share informations or to receive them. This can allow many different uses.
 

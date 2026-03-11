@@ -9,7 +9,9 @@
 
 ### Value Restrictions
 NOT NULL = Makes the data mandatory to fill in (Faz o dado ser obrigatório o preenchimento)
+
 UNIQUE = Makes the data unique, there cannot be two (Faz os dados serem unicos, não pode existir dois)
+
 DEFAULT = It automatically places status on created data (Ele coloca status nos dados criados de forma automatica)
 
 ### INSERT INTO nameTable (columnsName, columns2) VALUES ("Name", 1)

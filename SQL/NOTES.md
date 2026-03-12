@@ -29,6 +29,8 @@ WHERE = Fetch data with conditions (Para buscar dados com condições)
 
 OR = Operator (How "If, For, +, -, Not " in other languages)
 
+### 
+
 ### UPDATE users
 ### SET id = 4
 ### WHERE email = "teste@teste.com"
@@ -79,7 +81,7 @@ Same operator as other programming languages
 This key is unique, it does not allow data to be repeated or repeated, it is the main one, it sort of organizes the dataand avoids confusion (Essa key ela é unica, ela não permite dados repetidos ou ser repedida, ela é a principal, meio queonde organiza os dados e evita bagunça)
 
 ### ALTER TABLE users
-### MODIFY COLUNM id INT AUTO_INCREMENT, ADD PRIMARY KEY (id);
+### MODIFY COLUMN id INT AUTO_INCREMENT, ADD PRIMARY KEY (id);
 AUTO_INCREMENT = It keeps the id number for not repead
 
 ADD PRIMARY KEY = Adds a Primary key for colunm and for data

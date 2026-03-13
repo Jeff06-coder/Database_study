@@ -19,6 +19,10 @@ DEFAULT = It automatically places status on created data (Ele coloca status nos 
 ### INSERT INTO nameTable (columnsName, columns2) VALUES ("Name", 1)
 Used to insert data into a table (Usado para colocar dados em uma tabela)
 
+### ALTER TABLE nameTable
+### MODIFY COLUMN name VARCHAR(200) COMMENT 'Complete name of client'
+Way to put a comment in column
+
 ### SELECT * FROM nameTable
 ### WHERE columnsName = "Name" OR "Null"
 SELECT = Read the content of the table
@@ -29,7 +33,9 @@ WHERE = Fetch data with conditions (Para buscar dados com condições)
 
 OR = Operator (How "If, For, +, -, Not " in other languages)
 
-### 
+### SELECT * FROM users WHERE name LIKE "%Jeff";
+To specifically search for the data you want
+(Para buscar especificamente o dado que você quer)
 
 ### UPDATE users
 ### SET id = 4

@@ -112,3 +112,13 @@ ON DELETE CASCADE = It delete all data, of father and children
 
 ON UPDATE CASCADE = It update all data, of mom and children
 
+# JOINs (Junções)
+
+## INNER JOIN
+
+### SELECT * FROM users us
+### INNER JOIN table1 t1 ON us.id = t1.id_users
+ON = JOIN condition
+INNER JOIN = Search for equal values ​​between two tables (Procurar valores iguais entre duas tabelas)
+
+

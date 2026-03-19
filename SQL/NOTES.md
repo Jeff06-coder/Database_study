@@ -84,7 +84,8 @@ Same operator as other programming languages
 # Keys
 
 ## Primary Key
-This key is unique, it does not allow data to be repeated or repeated, it is the main one, it sort of organizes the dataand avoids confusion (Essa key ela é unica, ela não permite dados repetidos ou ser repedida, ela é a principal, meio queonde organiza os dados e evita bagunça)
+This key is unique, it does not allow data to be repeated or repeated, it is the main one, it sort of organizes the dataand avoids confusion 
+(Essa key ela é unica, ela não permite dados repetidos ou ser repedida, ela é a principal, meio queonde organiza os dados e evita bagunça)
 
 ### ALTER TABLE users
 ### MODIFY COLUMN id INT AUTO_INCREMENT, ADD PRIMARY KEY (id);
@@ -93,7 +94,8 @@ AUTO_INCREMENT = It keeps the id number for not repead
 ADD PRIMARY KEY = Adds a Primary key for colunm and for data
 
 ## Foreign Key
-This key can have several of them, as it connects the tables, it is as if it took the data from the Primary key and usedit to organize itself, it can also send the data to the Primary key (Essa key pode ter várias dela, pois ela conecta as tableas, é como se ela pegasse o dado da Primary key e usa-se para se organizar, ela pode também enviar os dados para a Primary key)
+This key can have several of them, as it connects the tables, it is as if it took the data from the Primary key and usedit to organize itself, it can also send the data to the Primary key 
+(Essa key pode ter várias dela, pois ela conecta as tableas, é como se ela pegasse o dado da Primary key e usa-se para se organizar, ela pode também enviar os dados para a Primary key)
 
 ### ALTER TABLE reservas
 ### ADD CONSTRAINT fk_reservas_users
@@ -114,11 +116,28 @@ ON UPDATE CASCADE = It update all data, of mom and children
 
 # JOINs (Junções)
 
+## LEFT JOIN
+LEFT JOIN = Asking to show all of the left table (the table after the FROM) and those on the right, if there are no results, it will be NULL.
+(Pedindo para mostrar todos da tabela esquerda (a tabela depois do FROM) e os da direita se não tiver resultados vai ficar NULL.)
+
+## RIGHT JOIN
+RIGHT JOIN = Does the same thing that the LEFT JOIN, but just inverted.
+
 ## INNER JOIN
 
 ### SELECT * FROM users us
 ### INNER JOIN table1 t1 ON us.id = t1.id_users
 ON = JOIN condition
-INNER JOIN = Search for equal values ​​between two tables (Procurar valores iguais entre duas tabelas)
 
+INNER JOIN = Search for equal values ​​between two tables
+(Procurar valores iguais entre as duas tabelas)
+
+# Subquery (Subconsulta)
+
+### SELECT * FROM produtos
+### WHERE id NOT IN (SELECT id_users FROM users)
+NOT IN = It searches the array of items placed, but it returns the result of the one that is not in the column.
+(Faz uma busca em array dos itens colocados, mas ele traz o resultado daquele que não esta na coluna.)
+
+### SELECT users.name, (SELECT COUNT(*) FROM produtos WHERE users_id  = users.id) AS total_produtos FROM users; 
 

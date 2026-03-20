@@ -140,4 +140,27 @@ NOT IN = It searches the array of items placed, but it returns the result of the
 (Faz uma busca em array dos itens colocados, mas ele traz o resultado daquele que não esta na coluna.)
 
 ### SELECT users.name, (SELECT COUNT(*) FROM produtos WHERE users_id  = users.id) AS total_produtos FROM users; 
+COUNT(*) = Count all users_id within products that are equal to users.id
+(Contar todos users_id dentro de produtos que são iguais a users.id)
 
+AS = defining the name of this new lookup column (definindo o nome dessa nova coluna de pesquisa)
+
+# Functions
+
+## Group By
+### SELECT COUNT(*), users_id FROM produtos GROUP BY users_id
+GROUP BY = It is used to group data from the same 'category'
+(É usado para agrupar os dados da mesma 'catecoria')
+
+## Order By
+### SELECT COUNT(*) AS Amount_users, users_id FROM produtos GROUP BY users_id ORDER BY Amount_users DESC
+DESC = Putting in descending order (Colocando na ordem decrescente)
+ORDER BY = To organize the column
+
+# Indices
+## Index
+### CREATE INDEX idx_nome ON users (nome)
+CREATE INDEX = Just read name, but the INDEX is to read less line
+
+### EXPLAIN SELECT * FROM users WHERE nome = "João"
+EXPLAIN = shows table performance and more specific information
